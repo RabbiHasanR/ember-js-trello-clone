@@ -1,0 +1,15 @@
+<form {{on 'submit' this.save}}>
+  <p>
+    <label>List</label>
+    <Input @type='text' class='form-control' @value={{this.list}} />
+  </p>
+  <p>
+    <label>Title</label>
+    <Input @type='text' class='form-control' @value={{this.title}} />
+  </p>
+
+  <div class='button-group'>
+    <LinkTo @route='cards' class='btn btn-back'>Close</LinkTo>
+    <button class='btn btn-save' type='submit'>Save</button>
+  </div>
+</form>

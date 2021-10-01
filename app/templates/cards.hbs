@@ -1,16 +1,19 @@
 <div class="board">
     {{#each-in (group-by 'list' this.model) as |list cards|}}
-    <ul class="list">
+    <DraggableObjectTarget class="list" @tagName='ul' @action={{fn this.updateCard list}}>
         <li class="list-header">
             {{list}}
         </li>
         {{#each cards as |card|}}
-        <li class="card">
-            <a href>{{card.title}}</a>
-        </li>
+        <DraggableObject class="card" @tagName='li' @content={{card}}>
+            <LinkTo @route='cards.detail' @model={{card.id}} href>{{card.title}}</LinkTo>
+        </DraggableObject>
         {{/each}}
-    </ul>
+        <NewCardForm @list={{list}} @onSubmit={{this.saveCard}}/>
+    </DraggableObjectTarget>
      {{/each-in}}
 
-     <NewListForm class="list-form"/>
+     <NewListForm class="list-form" @onSubmit={{this.saveCard}}/>
 </div>
+
+{{outlet}}

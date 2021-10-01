@@ -1,0 +1,13 @@
+{{page-title "Detail"}}
+<div class="modal">
+    <div class="modal-card">
+        <h3>Edit</h3>
+        <EditCardForm @onSubmit={{this.update}}
+        @list={{readonly this.model.list}}
+        @title={{readonly this.model.title}}/>
+    </div>
+
+    <div class="modal-card-footer">
+      <button type="button" class="btn btn-delete" {{on 'click' this.deleteCard}}>Delete card</button>
+    </div>
+</div>
