@@ -12,7 +12,7 @@ This is trello-clone one page web application. I built it with ember.js octane.
 ### Dynamic Rounting
 
 # Reference
-* Visit embercasts [https://www.embercasts.com/](http://localhost:4200).
+* Visit embercasts [Trello-clone](https://www.embercasts.com/free-video).
 
 ## Prerequisites
 
