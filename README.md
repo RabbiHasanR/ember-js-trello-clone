@@ -1,7 +1,18 @@
-# trello-demo
+# trello-clone
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is trello-clone one page web application. I built it with ember.js octane.
+
+# Features
+### Add New List
+### Update List
+### Add List Item
+### Update List Item
+### Drag And Drop List Item
+### Delete Card
+### Dynamic Rounting
+
+# Reference
+* Visit embercasts [https://www.embercasts.com/](http://localhost:4200).
 
 ## Prerequisites
 
