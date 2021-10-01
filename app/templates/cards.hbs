@@ -1,0 +1,16 @@
+<div class="board">
+    {{#each-in (group-by 'list' this.model) as |list cards|}}
+    <ul class="list">
+        <li class="list-header">
+            {{list}}
+        </li>
+        {{#each cards as |card|}}
+        <li class="card">
+            <a href>{{card.title}}</a>
+        </li>
+        {{/each}}
+    </ul>
+     {{/each-in}}
+
+     <NewListForm class="list-form"/>
+</div>
